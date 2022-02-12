@@ -1,0 +1,19 @@
+import numpy as np
+from numpy.random import randn
+y=0
+k=0
+i=0
+while i<=1000:
+    x=randn()
+    y=y+x
+    if x>=-1 and x<=1:
+        k=k+1
+    #print(x)
+    i=i+1
+average=y/i
+sigmaoneavg=k/i
+print("Mean of all the numbers between -1 and 1 is:", sigmaoneavg)
+print("Mean of all the generated numbers is:", average)
+print("Sum of all the generated numbers(x) is:", y)
+print("Sum of all the numbers between -1 and 1 is:", k)
+print("Count of all the numbers is:", i)
